@@ -1,0 +1,66 @@
+<head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body style="background-image: url('./assets/add.jpg'); height: 656px; background-repeat: no-repeat; background-size: 2000px 2000px; ">
+<div class="col-md-6" style="margin-left: 300px;">
+  <h2 class="text-center">Add Payment Details</h2>
+<form>
+    <div class="form-group">
+        <label for="tax">Id</label>
+        <input type="text" [(ngModel)]="payment.id" placeholder="Enter Tax Type" name="payment.id" class="form-control" id="tax">
+      </div>
+  <div class="form-group">
+    <label for="tax">Tax Type</label>
+    <input type="text" [(ngModel)]="payment.txnType" placeholder="Enter Tax Type" name="payment.txnType" class="form-control" id="tax">
+  </div>
+
+  <div class="form-group">
+    <label for="amount">Amount:</label>
+    <input [(ngModel)]="payment.amount" placeholder="Amount" name="amount" class="form-control" id="amount">
+  </div>
+
+  <div class="form-group">
+    <label for="remarks">Remarks:</label>
+    <input [(ngModel)]="payment.remarks" placeholder="Remarks" name="remarks" class="form-control" id="remarks">
+  </div>
+
+
+  <div class="form-group">
+      <label for="mid">Mentor Id</label>
+      <input type="text" [(ngModel)]="payment.mentor.mentorId" placeholder="Mentor Id" name="mid" class="form-control" id="mid">
+  </div>
+
+  <div class="form-group">
+    <label for="uid">User Id</label>
+    <input type="text" [(ngModel)]="payment.user.id" placeholder="User Id" name="uid" class="form-control" id="uid">
+</div>
+
+  <!-- <div class="form-group">
+      <label for="mname">Mentor Name</label>
+      <input type="text" [(ngModel)]="payment.mentor.userName" placeholder="Mentor Name " name="mname" class="form-control" id="mname">
+  </div> -->
+
+  <!-- <div class="form-group">
+      <label for="tid">Trainings Id</label>
+      <input type="text" [(ngModel)]="payment.trainings.id" placeholder="Trainings Id" name="tid" class="form-control" id="tid">
+  </div> -->
+
+  <div class="form-group">
+      <label for="Tid">Technology Id</label>
+      <input type="text" [(ngModel)]="payment.technologies.techid" placeholder=" Technology Id" name="Tid" class="form-control" id="Tid">
+  </div>
+
+  <div class="form-group">
+      <label for="tamntmen">Amount to Mentor</label>
+      <input type="text" [(ngModel)]="payment.totalAmountToMentor" placeholder="Amount to Mentor" name="tamntmen" class="form-control" id="tamntmen">
+  </div>
+   
+  <button class="btn btn-success" (click)="createPayment()">Insert</button>
+</form>
+</div>
+</body>

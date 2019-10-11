@@ -1,0 +1,69 @@
+
+  <style>
+  .button {
+    display: block;
+    width: 150px;
+    height: 25px;
+    background: black;
+    padding: 10px;
+    padding-top: 8px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+a:hover{
+  background-color: blue;
+}
+.button1 {
+    display: block;
+    width: 150px;
+    padding-top: 8px;
+    height: 25px;
+    background:red;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.gap{
+  height: 200px;
+}
+
+  </style>
+  <body style="background-image: url('./assets/back.jpg'); height: 638px; margin: 0px;">
+  <div>
+    <table style="width: 1000px; margin-left: 12 0px; margin-top: 10px; padding-top: 10px;">
+        <tr>
+            <td colspan="5" style="padding-left: 950px;">
+                <a class="button1" style="margin-left:10px; float:left;" routerLink="/index">Logout</a>
+            </td>
+          </tr>
+      <tr class="gap">
+  <td><a class="button" style="margin-left:10px; float:left;" routerLink="/adduser">Add User</a></td>
+  <td><a class="button" style="margin-left:10px; float:left;" routerLink="/useradmin">List User</a></td>
+  <td><a class="button" style="margin-left:10px; float:left;" routerLink="/addmentor">Add Mentor</a></td>
+  <td><a class="button" style="margin-left:10px; float:left;" routerLink="/mentoradmin">List Mentors</a></td>
+  <td><a class="button" style="margin-left:10px; float:left;" routerLink="/trainings">List Trainings</a></td>
+</tr>
+
+<tr class="gap">
+  <td><a class="button" style="margin-left:10px; float:left;" routerLink="/addtrainings">Add Trainings</a></td>
+  <td><a class="button" style="margin-left:10px; float:left;" routerLink="/addtechnologies">Add Technologies</a></td>
+  <td><a class="button" style="margin-left:10px; float:left;" routerLink="/technologies">List Technologies</a></td>
+
+  
+  <td><a class="button" style="margin-left:10px; float:left;" routerLink="/addpayment">Add Payment</a></td>
+  <td><a class="button" style="margin-left:10px; float:left;" routerLink="/payment">List Payment</a></td>
+  
+</tr>
+
+</table>
+  <br/>
+  <router-outlet></router-outlet>
+</div>
+</body>

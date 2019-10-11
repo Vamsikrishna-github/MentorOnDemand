@@ -1,0 +1,56 @@
+<head>
+  <title>User login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: thistle; height: 656px;">
+<div class="container">
+    <img src="./assets/user.jpg" width="15%" height="15%" style="margin-left: 460px; margin-top: 50px;">
+     <form class="navbar-form navbar-right" >
+        <!-- <div class="input-group">
+          <input type="text" class="form-control" (input)="take = $event.target.value" [(ngModel)]="mentors.mentorId" placeholder="Search" name="search">
+             <div class="input-group-btn">
+              <button class="btn btn-default" (click)="getMentor(mentors)" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div> 
+        </div> -->
+        
+    </form>
+    <div style="width: 600px; margin-left: 250px;">
+  <h2 class="text-center">User Login</h2>
+  <p >Verify your credentials</p>
+  <!-- <form method="post" action="#" > -->
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" [(ngModel)]="user.email" class="form-control"  (input)="usr = $event.target.value"  id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" [(ngModel)]="user.password" (input)="pwd = $event.target.value"  class="form-control" id="pwd">
+    </div>
+    <input type="button" name="" (click)="searchUser()" style="width: 150px; margin-left: 230px;" class="btn btn-primary"  value="Log in"><br>
+  <!-- </form> -->
+  <b>New user </b><a class="a" routerLink='/adduser' >Sign up here</a><br>
+    <b>Unauthorization login will be prosecuted</b><br>
+  <!-- <b>note:Username:User || Password:User</b> -->
+  <!-- <router-outlet></router-outlet> -->
+</div>
+</div>
+</body>
+<style>
+  .a{
+      color:black;
+      font-family: monospace;
+      text-decoration: none;
+      font-style: bold;
+    }
+  .a:hover
+    {
+      color:red;
+      text-decoration: none;
+    }
+</style>

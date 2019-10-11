@@ -1,0 +1,101 @@
+<style>
+  .button{
+ display: block;
+ width: 150px;
+ height: 40px;
+ background: black;
+ padding: 10px;
+ padding-top: 8px;
+ text-align: center;
+ border-radius: 5px;
+ color: white;
+ font-weight: bold;
+ text-decoration: none;
+ font-size: 18px;
+}
+a:hover{
+background-color: blue;
+}
+#list{
+margin-left: -610px;
+margin-top: -170px;
+}
+#image{
+margin-left: 21px;
+margin-top: -250px;
+}
+
+.btn-circle {
+width: 245px;
+height: 245px;
+line-height: 45px;
+text-align: center;
+padding: 0;
+border-radius: 100px;
+}
+
+.btn-circle i {
+position: relative;
+top: -1px;
+}
+
+.btn-circle-sm {
+width: 135px;
+height: 135px;
+line-height: 35px;
+font-size: 2.0rem;
+}
+
+.btn-circle-lg {
+width: 155px;
+height: 155px;
+line-height: 55px;
+font-size: 1.1rem;
+}
+
+.btn-circle-xl {
+width: 170px;
+height: 170px;
+line-height: 70px;
+font-size: 1.3rem;
+}
+</style>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-image: url('./assets/back.jpg'); height: 638px; margin: 0px;">
+<h1 style="color:white;"><span class="glyphicon glyphicon-user"></span> Welcome {{uname}}</h1>
+<a class="button" style="float: left; margin-top: 0px; margin-left: 1150px; background-color: red; position: sticky; position: -webkit-sticky;" routerLink='/index'>Logout</a>
+
+<!-- <a routerLink="/mentorsearch"><button type="button" class="btn btn-default" style="float: left;margin-top: 15px; margin-left: 100px;">
+   <span class="glyphicon glyphicon-search"></span> Find Mentors & Technologies
+ </button></a> -->
+ <!-- <a routerLink="/addpayment" style="margin-left: 20px;"><button type="button" class="btn btn-default" style="margin-top: 15px;"><i class="fa fa-rupee" style="font-size:17px;padding-right: 5px;"></i>Pay Here</button></a> -->
+ <!-- <a routerLink="/payment" style="margin-left: 20px;"><button type="button" class="btn btn-default" style="margin-top: 15px;"><i class="fa fa-rupee" style="font-size:17px;padding-right: 5px;"></i>Payment Checkout</button></a> -->
+ <a routerLink="/trainings"><button type="button" class="btn btn-default" style="float: left;margin-top: 15px; margin-left: 50px;">
+  <span class="glyphicon glyphicon-search"></span> Training Details
+</button></a>
+ <h1 style="margin-left: 600px; color:white">Profile</h1><br>
+ <img style="margin-left: 550px;" src="./assets/profile.png">
+ <h4 style="margin-left: 550px; color: white">Profession: Trainer</h4>
+ <h4 style="margin-left: 550px; color: white">Username: {{uname}}</h4>
+ <div style="padding-top: 150px; padding-left: 350px;">
+ 
+<!-- <a routerLink='/addpayment'> <button class="btn btn-success btn-circle btn-circle-sm m-1" style="background-color: red; margin-left: 50px; "><i class="fa fa-rupee">Pay Here</i></button></a>
+<a routerLink='/payment'> <button class="btn btn-success btn-circle btn-circle-sm m-1" style="background-color: white; color: black; margin-left: 20px; margin-right: 20px;"><i class="fa fa-rupee">Pay Details</i></button></a> -->
+<!-- <a routerLink='/trainings'> <button class="btn btn-success btn-circle btn-circle-sm m-1" style="background-color: green; margin-right: 20px;"><i class="fa fa-check">Students List</i></button></a> -->
+
+<!-- <a routerLink='/technologies'> <button class="btn btn-success btn-circle btn-circle-sm m-1" style="background-color: blue;"><i class="fa fa-check">Technologies</i></button></a> -->
+<!-- <a class="button" style="float: left; margin-right: 30px;" routerLink='/users'>List Users</a> -->
+
+<!-- <a class="button" style="float: left; margin-right: 30px;" routerLink='/trainings'>List Trainings</a>
+<a class="button" style="float: left; margin-right: 30px;" routerLink='/technologies'>List Technologies</a> -->
+
+</div>
+</body>
